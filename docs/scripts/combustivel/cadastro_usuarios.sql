@@ -45,6 +45,7 @@ ALTER TABLE `usuarios` AUTO_INCREMENT = 1;
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
 INSERT INTO `usuarios` (`nome`, `sobrenome`, `pais`, `estado`, `cidade`, `email`, `senha`  ) VALUES ('Procon','NTI','Brasil','Paraíba','João Pessoa','email@procon.pb.gov.br','123');
+INSERT INTO `usuarios` (`nome`, `sobrenome`, `pais`, `estado`, `cidade`, `email`, `senha`  ) VALUES ('Jonathan','NTI','Brasil','Paraíba','João Pessoa','jonathan@email.com.br','123456');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
