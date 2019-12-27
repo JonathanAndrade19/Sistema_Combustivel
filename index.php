@@ -59,17 +59,17 @@
                 />
                 <label for="inputPassword" class="sr-only">Senha</label>
                 <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha" required />
-                <div class="custom-control custom-checkbox mb-3">
+                <!-- <div class="custom-control custom-checkbox mb-3">
                   <input type="checkbox" class="custom-control-input" id="recuperar" />
                   <label class="custom-control-label" for="recuperar">Recuperar acesso</label>
-                </div>
+                </div> -->
 
                 <div class="form-row">
                   <div class="form-group col-md-12">
                     <input class="btn btn-lg btn-secondary btn-block" type="submit" value="Entrar" />
                   </div>
                 </div>
-                <p class="mt-5 mb-3 text-muted">Procon PB NTI &middot; &copy; 2017-2018</p>
+                <p class="mt-5 mb-3 text-muted">Procon PB NTI &middot; &copy; 2017-2019</p>
               </form>
             </div>
           </div>

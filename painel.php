@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
     <title>Procon PB - SI (Sistemas Internos)</title>
-    <link rel="shortcut icon" href="./favicon.ico" >
+    <link rel="shortcut icon" href="./dist/combustivel0.png" >
 
 		<link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
 

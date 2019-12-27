@@ -48,19 +48,19 @@
                 <label for="razao_social">POSTO</label>
                 <input type="text" class="form-control" id="razao_social" maxlength="100" name="razao_social" value="<?php echo $pesquisa->razao_social; ?>" placeholder="Informe a Razão Social">
                 <?php
-                    $conexao = conexao::getInstance();
+                    // $conexao = conexao::getInstance();
 
-                    $sql = mysqli_query($conexao, "SELECT * FROM posto");
-                    if($sql === FALSE) { 
-                       die(mysqli_error());
-                    }
-                    echo '<select class="form-control" name="posto" id="posto">';
+                    // $sql = mysqli_query($conexao, "SELECT * FROM posto");
+                    // if($sql === FALSE) { 
+                    //    die(mysqli_error());
+                    // }
+                    // echo '<select class="form-control" name="posto" id="posto">';
                     
-                    while($row = mysqli_fetch_assoc($sql)){
-                        echo "<option value='".$row['id']."'>".$row['razao_social'].'</option>';
-                    }
-                    mysqli_close($conexao);
-                    echo '</select>';
+                    // while($row = mysqli_fetch_assoc($sql)){
+                    //     echo "<option value='".$row['id']."'>".$row['razao_social'].'</option>';
+                    // }
+                    // mysqli_close($conexao);
+                    // echo '</select>';
                     // getPostos($postos, $postos->razao_social, 'Selecione o Posto','posto', 'posto');
                     // generate_OptionsForms($types, $pesquisa->produto, 'Gasolina', 'produto', 'produto');
                 ?>                
@@ -73,9 +73,9 @@
                 <span class='msg-erro msg-cpf'></span>
             </div>
 
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-4">
                 <label for="cnpj">CNPJ</label>
-                <input type="text" class="form-control" id="cnpj" maxlength="14" name="cnpj" value="<?php echo $pesquisa->cnpj; ?>" placeholder="Ex: 00.000.000/0001-00">
+                <input type="text" class="form-control" id="cnpj" maxlength="18" name="cnpj" value="<?php echo $pesquisa->cnpj; ?>" placeholder="Ex: 00.000.000/0001-00">
                 <span class='msg-erro msg-identidade'></span>
             </div>
         </div>
@@ -153,7 +153,7 @@
         
         <div class="form-row">
 
-            <div class="form-group col-md-4 col-auto mr-auto ">
+            <div class="form-group col-md-4 col-auto ">
                 <label for="preco_de_compra">PREÇO DA COMPRA</label>
                 <input type="text" class="form-control" id="preco_de_compra" maxlength="10" name="preco_de_compra" value="<?php echo $pesquisa->preco_de_compra; ?>" placeholder="Informe o Preço da Compra">
                 <span class='msg-erro msg-instituicao'></span>
